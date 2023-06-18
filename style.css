@@ -1,16 +1,20 @@
+:root {
+    --dark: #2E3440;
+    --green: #A3BE8C;
+}
 body {
     margin: 0 auto;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    background-color:black;
-    color: greenyellow;
+    background-color: var(--dark);
+    color: var(--green);
 }
 @keyframes blinkingText {
     0% {
-    color: greenyellow;
+    color: var(--green);
     }
     49% {
-    color: greenyellow;
+    color: var(--green);
     }
     60% {
     color: transparent;
@@ -21,11 +25,11 @@ body {
     text-shadow: none;
     }
     100% {
-    color: greenyellow;
+    color: var(--green);
     }
 }
 .blinking { animation: blinkingText 1.2s infinite; }
-a { text-decoration: none; color:greenyellow; }
+a { text-decoration: none; color:var(--green); }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 .banner {
@@ -35,16 +39,18 @@ a:hover { text-decoration: underline; }
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: greenyellow;
+    color: var(--green);
 }
 .main {
-    margin-left: 25%;
-    margin-right: 25%;
-    border: 1 solid red;
+    margin-left: 20%;
+    margin-right: 20%;
 }
-.main li {
+li {
     list-style: none;
 }
-.main li::before {
+li::before {
     content: ">>>";
+}
+.section {
+    border-bottom: 1px solid var(--green);
 }
