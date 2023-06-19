@@ -8,7 +8,7 @@ body {
     font-weight: bold;
     background-color: var(--dark);
     color: var(--green);
-    font-size: 15px;
+    font-size: 20px;
 }
 @keyframes blinkingText {
     0% {
@@ -39,7 +39,7 @@ a:hover { text-decoration: underline; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(15px + 2vmin);
     color: var(--green);
 }
 .main {
